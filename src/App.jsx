@@ -1,5 +1,11 @@
+import Header from "./components/header";
+
 const App = () => {
-  return <h1>GetLinked </h1>;
+  return (
+    <main>
+      <Header />
+    </main>
+  );
 };
 
 export default App;
