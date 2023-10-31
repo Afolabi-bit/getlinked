@@ -7,6 +7,10 @@
   src: url("./font/CrashDisplay/ClashDisplay-Bold.otf");
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -46,4 +50,8 @@ h6 {
 #navbar.show {
   top: 0px;
   right: 0px;
+}
+
+.font {
+  font-family: "Typo Hoop Demo", sans-serif;
 }
