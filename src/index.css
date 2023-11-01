@@ -49,7 +49,7 @@ h6 {
 }
 
 #navbar {
-  transition: all 0.4s ease-in;
+  transition: all 0.4s ease;
 }
 
 #navbar.show {
