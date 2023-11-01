@@ -22,7 +22,7 @@ const Hero = () => {
         />
       </div>
 
-      <article className="pl-[2rem] flex flex-col items-center md:pl-[3rem] lg:pl-[4.5rem] lg:flex-row  w-full">
+      <article className=" flex flex-col items-center  lg:pl-[4.5rem] lg:flex-row  w-full">
         <div className="relative text-center  mt-9 md:text-left">
           <Shadow left={"50px"} top={"70px"} />
 
@@ -54,7 +54,7 @@ const Hero = () => {
               />
             </h1>
 
-            <p className="text-[13px] mb-6 font-normal center">
+            <p className="text-[13px] w-[80%] mb-6 font-normal center">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>
