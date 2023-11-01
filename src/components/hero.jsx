@@ -6,7 +6,7 @@ const Hero = () => {
       <Line />
       <article className="container">
         <div className="mt-6 md:mt-8">
-          <p className="text-base italic font-bold text-right  md:text-[32px] md:pb-1 lg:[36px]">
+          <p className="text-[15px] italic font-bold text-right  md:text-[32px] md:pb-1 lg:[36px]">
             Igniting a Revolution in HR Innovation
           </p>
           <img
