@@ -50,7 +50,7 @@ const Header = () => {
       <nav
         ref={navBarRef}
         id="navbar"
-        className="flex justify-center z-[0] flex-col md:hidden bg-[#150E28] w-full absolute top-[-105%] right-[0] p-12 rounded-[5px]"
+        className="flex justify-center z-[10000] flex-col md:hidden bg-[#150E28] w-full absolute top-[-105%] right-[0] p-12 rounded-[5px]"
       >
         <button
           className="close-btn flex justify-center items-center rounded-[50%] w-[32px] h-[32px] z-50  absolute top-[30px] right-[30px]"
