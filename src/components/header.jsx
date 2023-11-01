@@ -15,7 +15,7 @@ const Header = () => {
       : navBar.classList.add("show");
   };
   return (
-    <header className="container flex items-center justify-between pt-8 pb-4 ">
+    <header className="px-[2rem] flex items-center justify-between pt-8 pb-4 md:px-[3rem] lg:px-[4.5rem]">
       <h1 className="text-white text-[22px] font-semibold md:font-bold">
         get<span className="text-[#D434FE] ">linked</span>
       </h1>

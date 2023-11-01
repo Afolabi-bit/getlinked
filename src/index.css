@@ -74,21 +74,15 @@ nav li > a:hover {
 }
 
 .bg-shadow {
-  background: #8f3affe0;
+  background: #8f3aff;
   border-radius: 50% 50% 50px 50px;
-  box-shadow: 5px 5px 130px 70px #903aff;
+  box-shadow: 5px 5px 170px 70px #903aff;
 }
 
 .font {
   font-family: "Typo Hoop Demo", sans-serif;
 }
 
-.chain {
-  width: 33px;
-  height: 33px;
-}
-
-.fire {
-  width: 22px;
-  height: 22px;
+.count p {
+  font-family: "Unica One", sans-serif;
 }

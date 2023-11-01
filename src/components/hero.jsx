@@ -1,44 +1,91 @@
-import { Line, Shadow } from "./utils";
+import { Line, RegisterBtn, Shadow } from "./utils";
 import Curve from "../assets/purple_curve.svg";
 import Chain from "../assets/chain.svg";
 import Fire from "../assets/fire.svg";
+import Bulb from "../assets/yellow_bulb.png";
+import Man from "../assets/man-2.png";
+import StarryBg from "../assets/starry_bg.svg";
 
 const Hero = () => {
   return (
     <section className="text-white min-h-screen">
       <Line />
-      <article className="container">
-        <div className="mt-6 md:mt-8">
-          <p className="text-[15px] italic font-bold text-right  md:text-[32px] md:pb-1 lg:[36px]">
-            Igniting a Revolution in HR Innovation
-          </p>
-          <img
-            className="w-[115px] h-[7px] float-right md:w-[253px] md:h-[12px] "
-            src={Curve}
-            alt="#"
-          />
-        </div>
 
-        <div className="relative text-center mt-6">
-          <Shadow left={"100px"} top={"50px"} />
-          <div className=" flex flex-col justify-center items-center">
-            <h1 className="z-10">
-              <span className="text-[32px] font-bold">getlinkedTech</span>
+      <div className="mt-6 pr-[2rem] md:pr-[3rem] md:mt-8 lg:pr-[4.5rem]">
+        <p className="text-[15px] italic font-bold text-right  md:text-[32px] md:pb-1 lg:[36px]">
+          Igniting a Revolution in HR Innovation
+        </p>
+        <img
+          className="w-[115px] h-[7px] float-right md:w-[253px] md:h-[12px] "
+          src={Curve}
+          alt="#"
+        />
+      </div>
+
+      <article className="pl-[2rem] flex flex-col items-center md:pl-[3rem] lg:pl-[4.5rem] lg:flex-row  w-full">
+        <div className="relative text-center  mt-9 md:text-left">
+          <Shadow left={"50px"} top={"70px"} />
+
+          <div className=" flex flex-col justify-center items-center  lg:items-start ">
+            <h1 className="z-10 relative">
+              <span className="text-[32px] font-bold md:text-[50px] lg:text-[65px]">
+                getlinkedTech
+              </span>
+              <img
+                src={Bulb}
+                alt="#"
+                className="w-[18px] h-[26px] absolute right-[18px] top-[-12px] md:right-[32px] md:top-[-9px] md:w-[25px] md:h-[32px]"
+              />
             </h1>
+
             <h1 className="z-50 flex items-center">
-              <span className="text-[32px] font-bold">
+              <span className="text-[32px] font-bold md:text-[50px] lg:text-[65px]">
                 Hackathon<span className="text-[#D434FE]">1.0</span>
               </span>
-              <img className="chain" src={Chain} alt="" />
-              <img className="fire" src={Fire} alt="" />
+              <img
+                className="chain w-[33px] h-[33px] md:w-[55px] md:h-[55px] lg:w-[86px] lg:h-[86px]"
+                src={Chain}
+                alt=""
+              />
+              <img
+                className="fire w-[22px] h-[22px] md:w-[38px] md:h-[38px] lg:w-[58px] lg:h-[58px]"
+                src={Fire}
+                alt=""
+              />
             </h1>
-            <p className="text-[13px] font-normal center">
+
+            <p className="text-[13px] mb-6 font-normal center">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>
+
+            <RegisterBtn />
+
+            <div className="count flex gap-[20px] mt-2 md:mt-12">
+              <p className="text-[48px]   font-normal">
+                00<span className="text-[20px]">H</span>
+              </p>
+              <p className="text-[48px]  font-normal">
+                00<span className="text-[20px]">M</span>
+              </p>
+              <p className="text-[48px]  font-normal">
+                00<span className="text-[20px]">S</span>
+              </p>
+            </div>
           </div>
         </div>
+
+        <div className="relative w-screen mt-4 md:w-[70%] lg:w-[50%]">
+          <img src={Man} alt="" className="w-full" />
+          <img
+            src={StarryBg}
+            alt=""
+            className="absolute top-0 left-0 w-[378px] h-[355px] lg:top-[30px] lg:left-[25px]"
+          />
+        </div>
       </article>
+
+      <Line />
     </section>
   );
 };
