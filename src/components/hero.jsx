@@ -38,7 +38,7 @@ const Hero = () => {
               />
             </h1>
 
-            <h1 className="z-50 flex items-center">
+            <h1 className="z-50 flex items-cente ">
               <span className="text-[32px] font-bold md:text-[50px] lg:text-[65px]">
                 Hackathon<span className="text-[#D434FE]">1.0</span>
               </span>
@@ -61,7 +61,7 @@ const Hero = () => {
 
             <RegisterBtn />
 
-            <div className="count flex gap-[20px] mt-2 md:mt-12">
+            <div className="count flex  gap-[20px] mt-2 md:mt-12">
               <p className="text-[48px]   font-normal">
                 00<span className="text-[20px]">H</span>
               </p>
@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative w-screen mt-4 md:w-[70%] lg:w-[50%]">
+        <div className="relative overflow-hidden w-screen mt-4 md:w-[70%] lg:w-[50%]">
           <img src={Man} alt="" className="w-full" />
           <img
             src={StarryBg}
