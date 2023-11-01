@@ -57,6 +57,38 @@ h6 {
   right: 0px;
 }
 
+nav li > a {
+  transition: all 0.3s;
+}
+
+nav li > a:hover {
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-shadow {
+  background: #8f3affe0;
+  border-radius: 50% 50% 50px 50px;
+  box-shadow: 5px 5px 130px 70px #903aff;
+}
+
 .font {
   font-family: "Typo Hoop Demo", sans-serif;
+}
+
+.chain {
+  width: 33px;
+  height: 33px;
+}
+
+.fire {
+  width: 22px;
+  height: 22px;
 }
