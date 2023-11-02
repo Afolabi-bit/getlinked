@@ -38,7 +38,7 @@ const Hero = () => {
               />
             </h1>
 
-            <h1 className="z-50 flex items-cente ">
+            <h1 className="z-50 flex items-center ">
               <span className="text-[32px] font-bold md:text-[50px] lg:text-[65px]">
                 Hackathon<span className="text-[#D434FE]">1.0</span>
               </span>
