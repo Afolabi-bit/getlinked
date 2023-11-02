@@ -32,7 +32,7 @@ const Intro = () => {
         <img
           src={StarP}
           alt=""
-          className="twinkle-2 absolute w-[8px] h-[10px] top-[20px] right-[50px] "
+          className="twinkle-2 absolute w-[8px] h-[10px] top-[28px] right-[50px] "
         />
         <h2 className="mb-3">
           <span className="text-white text-[20px] font-bold leading-[133%]">
