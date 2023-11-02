@@ -5,6 +5,8 @@ import Fire from "../assets/fire.svg";
 import Bulb from "../assets/yellow_bulb.png";
 import Man from "../assets/man-2.png";
 import StarryBg from "../assets/starry_bg.svg";
+import StarW from "../assets/star-white.svg";
+import StarD from "../assets/star-dim.svg";
 
 const Hero = () => {
   return (
@@ -22,7 +24,22 @@ const Hero = () => {
         />
       </div>
 
-      <article className=" flex flex-col items-center  lg:pl-[4.5rem] lg:flex-row  w-full">
+      <article className=" flex flex-col items-center relative lg:pl-[4.5rem] lg:flex-row  w-full">
+        <img
+          src={StarW}
+          alt="#"
+          className="twinkle-2 absolute left-[25%] top-[20px]"
+        />
+        <img
+          src={StarD}
+          alt="#"
+          className="twinkle absolute w-[6px] h-[8px] right-[15%] top-[15px]"
+        />
+        <img
+          src={StarD}
+          alt="#"
+          className="twinkle absolute w-[6px] h-[8px] right-[20%] top-[200px]"
+        />
         <div className="relative text-center  mt-9 md:text-left">
           <Shadow left={"50px"} top={"70px"} />
 
