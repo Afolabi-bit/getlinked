@@ -7,19 +7,19 @@ import { Line } from "./utils";
 const Intro = () => {
   return (
     <section className="w-screen flex flex-col items-center">
-      <div className="big-idea w-full min-h-[300px] mb-7  relative">
+      <div className="big-idea w-full min-h-[320px] mb-7 relative md:min-h-[550px]">
         <p className="z-10 absolute w-full top-[50%] left-[50%] text-center translate-x-[-50%] translate-y-[-20%] text-white text-[14px] font-bold">
           The Big <br /> Idea!
         </p>
         <img
           src={BigIdea}
           alt="#"
-          className="absolute w-[60%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+          className="absolute w-[60%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:w-[50%]"
         />
         <img
           src={Arrow}
           alt="#"
-          className="z-[100] rotate-[-17deg] w-[19.5px] h-[23px] absolute bottom-[10px] left-[50%] translate-x-[-50%]"
+          className="z-[100] rotate-[-17deg] w-[19.5px] h-[23px] absolute bottom-[10px] left-[50%] translate-x-[-50%] md:bottom-[40px]"
         />
         <img
           src={StarG}
@@ -28,12 +28,13 @@ const Intro = () => {
         />
       </div>
 
-      <div className="text-center px-8 relative mb-[70px]">
+      <div className="text-center px-8 relative mb-[70px] md:px-[3rem]">
         <img
           src={StarP}
           alt=""
-          className="twinkle-2 absolute w-[8px] h-[10px] top-[28px] right-[50px] "
+          className="twinkle-2 absolute w-[8px] h-[10px] top-[28px] right-[50px] md:right-[28%]"
         />
+
         <h2 className="mb-3">
           <span className="text-white text-[20px] font-bold leading-[133%]">
             Introduction to getlinked{" "}
