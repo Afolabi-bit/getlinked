@@ -1,6 +1,3 @@
-import Star from "../assets/star.svg";
-import BrightStar from "../assets/bright-star.svg";
-
 export const RegisterBtn = () => {
   return (
     <button className="register w-[172px] md:w-[122px] lg:w-[172px] text-white">

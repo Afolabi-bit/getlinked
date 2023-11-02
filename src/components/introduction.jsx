@@ -2,6 +2,7 @@ import BigIdea from "../assets/big.png";
 import Arrow from "../assets/arrow.svg";
 import StarG from "../assets/star-gra.svg";
 import StarP from "../assets/star-purple.svg";
+import { Line } from "./utils";
 
 const Intro = () => {
   return (
@@ -27,7 +28,7 @@ const Intro = () => {
         />
       </div>
 
-      <div className="text-center px-8 relative">
+      <div className="text-center px-8 relative mb-[70px]">
         <img
           src={StarP}
           alt=""
@@ -51,6 +52,7 @@ const Intro = () => {
           change the world, that's what we're all about!
         </p>
       </div>
+      <Line />
     </section>
   );
 };

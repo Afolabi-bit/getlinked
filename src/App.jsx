@@ -4,7 +4,7 @@ import Intro from "./components/introduction";
 
 const App = () => {
   return (
-    <main className="w-screen overflow-hidden">
+    <main className="w-screen overflow-hidden mb-52">
       <Header />
       <Hero />
       <Intro />
