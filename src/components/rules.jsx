@@ -1,13 +1,14 @@
 import StarW from "../assets/star-white.svg";
 import StarP from "../assets/star-purple.svg";
 import Image from "../assets/7450159.png";
-import { Line } from "./utils";
+import { Line, Shadow } from "./utils";
 
 const Rules = () => {
   return (
     <section className="w-screen pt-10">
       <article className="w-full flex flex-col items-center lg:flex-row-reverse lg:justify-between lg:gap-[40px] lg:px-[5rem]">
         <div className="w-full min-h-[320px] relative  mb-10  md:min-h-[550px] lg:w-[40%] lg:mb-0">
+          <Shadow dist={"rules-shadow-top"} />
           <img
             src={StarW}
             alt="#"
@@ -21,15 +22,16 @@ const Rules = () => {
         </div>
 
         <div className="text-center px-8 relative mb-[50px] md:px-[3rem] 0 lg:w-[50%] lg:text-left">
+          <Shadow dist={"rules-shadow-bottom"} />
           <img
             src={StarP}
             alt="#"
-            className="twinkle-2 absolute top-[40px] right-[48px]"
+            className="twinkle-2 absolute top-[40px] right-[48px] lg:top-[30px] lg:right-[290px] "
           />
           <img
             src={StarW}
             alt="#"
-            className="twinkle absolute left-[30%] bottom-[-25px]"
+            className="twinkle absolute left-[30%] bottom-[-25px] lg:left-[10%] lg:bottom-[-100px] "
           />
           <h2 className="mb-3 ">
             <span className="text-white text-[20px] font-bold leading-[133%] md:text-[32px]">

@@ -155,3 +155,51 @@ nav li > a:hover {
     opacity: 1;
   }
 }
+
+.hero-shadow {
+  left: 0;
+  top: 0;
+}
+
+.rules-shadow-top {
+  left: 0;
+  top: 80px;
+}
+
+.rules-shadow-bottom {
+  right: 50px;
+}
+
+@media (min-width: 800px) {
+  .hero-shadow {
+    left: 15%;
+    top: 0;
+    scale: 2;
+  }
+
+  .rules-shadow-top {
+    left: 0;
+    top: 80px;
+    scale: 2;
+  }
+
+  .rules-shadow-bottom {
+    right: 50px;
+    scale: 2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rules-shadow-top {
+    left: 0;
+    top: 50%;
+    scale: 1;
+  }
+
+  .rules-shadow-bottom {
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    scale: 1.5;
+  }
+}

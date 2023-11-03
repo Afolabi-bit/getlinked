@@ -41,7 +41,7 @@ const Hero = () => {
           className="twinkle-fast absolute w-[6px] h-[8px] right-[20%] top-[200px]"
         />
         <div className="relative text-center  mt-9 md:text-left">
-          <Shadow left={"50px"} top={"70px"} />
+          <Shadow dist={"hero-shadow"} />
 
           <div className=" flex flex-col justify-center items-center  lg:items-start ">
             <h1 className="z-10 relative">

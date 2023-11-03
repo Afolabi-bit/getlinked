@@ -10,11 +10,8 @@ export const Line = () => {
   return <div className="w-screen h-[1px] bg-[#ffffff2e]"></div>;
 };
 
-export const Shadow = ({ left, top }) => {
+export const Shadow = ({ dist }) => {
   return (
-    <div
-      className="bg-shadow absolute z-[0] w-[1px] h-[1px]"
-      style={{ left: `${left}`, top: `${top}` }}
-    ></div>
+    <div className={`${dist} bg-shadow absolute z-[0] w-[1px] h-[1px]`}></div>
   );
 };
