@@ -191,15 +191,15 @@ nav li > a:hover {
 
 @media (min-width: 1000px) {
   .rules-shadow-top {
-    left: 0;
-    top: 50%;
+    top: 70%;
+    left: 100%;
     scale: 1;
   }
 
   .rules-shadow-bottom {
     left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    scale: 1.5;
+    top: 10%;
+    translate: 00% -50%;
+    scale: 1.2;
   }
 }
