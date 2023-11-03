@@ -1,6 +1,6 @@
 import Menu from "../assets/menu-btn.svg";
 import Close from "../assets/close_btn.svg";
-import { Line, RegisterBtn } from "./utils";
+import { RegisterBtn } from "./utils";
 import { useRef } from "react";
 
 const Header = () => {

@@ -98,6 +98,8 @@ nav li > a:hover {
 
 .twinkle-2 {
   animation: twinkle-2 10s ease infinite forwards;
+  width: 8px;
+  height: 10px;
 }
 
 @keyframes twinkle {

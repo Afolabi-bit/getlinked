@@ -97,7 +97,7 @@ const Hero = () => {
           <img
             src={StarryBg}
             alt=""
-            className="absolute top-0 left-0 w-[378px] h-[355px] lg:top-[30px] lg:left-[25px]"
+            className="absolute top-0 left-0 w-[378px] h-[355px] lg:top-[30px] lg:left-[-30px] lg:h-[450px] lg:w-[650px]"
           />
         </div>
       </article>

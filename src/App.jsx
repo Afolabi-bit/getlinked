@@ -1,6 +1,7 @@
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Intro from "./components/introduction";
+import Rules from "./components/rules";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Header />
       <Hero />
       <Intro />
+      <Rules />
     </main>
   );
 };
