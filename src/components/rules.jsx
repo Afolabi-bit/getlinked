@@ -6,12 +6,12 @@ import { Line } from "./utils";
 const Rules = () => {
   return (
     <section className="w-screen pt-10">
-      <article className="w-full flex flex-col  lg:flex-row-reverse lg:justify-between lg:gap-[40px] lg:px-[5rem]">
+      <article className="w-full flex flex-col items-center lg:flex-row-reverse lg:justify-between lg:gap-[40px] lg:px-[5rem]">
         <div className="w-full min-h-[320px] relative  mb-10  md:min-h-[550px] lg:w-[40%] lg:mb-0">
           <img
             src={StarW}
             alt="#"
-            className="twinkle-fast absolute  top-[50%] left-[30px] translate-y-[-50%] md:left-[18%]"
+            className="twinkle-fast absolute  top-[50%] left-[30px] translate-y-[-50%] md:left-[18%] lg:left-[35%] lg:top-[80%]"
           />
           <img
             src={Image}
