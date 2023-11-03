@@ -11,12 +11,12 @@ const Rules = () => {
           <img
             src={StarW}
             alt="#"
-            className="twinkle-fast absolute  top-[50%] left-[30px] translate-y-[-50%]"
+            className="twinkle-fast absolute  top-[50%] left-[30px] translate-y-[-50%] md:left-[18%]"
           />
           <img
             src={Image}
             alt="#"
-            className=" w-[100%] md:w-[50%] lg:w-[100%]"
+            className=" w-[100%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  md:w-[80%] lg:w-[100%]"
           />
         </div>
 

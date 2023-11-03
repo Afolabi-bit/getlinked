@@ -10,7 +10,7 @@ import StarD from "../assets/star-dim.svg";
 
 const Hero = () => {
   return (
-    <section className="text-white min-h-screen">
+    <section className="text-white min-h-full">
       <Line />
 
       <div className="mt-6 pr-[2rem] md:pr-[3rem] md:mt-8 lg:pr-[4.5rem]">
