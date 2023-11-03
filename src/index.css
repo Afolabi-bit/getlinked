@@ -26,7 +26,8 @@ h6 {
   font-family: "crashDisplay", sans-serif;
 }
 
-.register {
+.register,
+.btn {
   border-radius: 4px;
   background: linear-gradient(
     270deg,
