@@ -38,7 +38,7 @@ const Hero = () => {
         <img
           src={StarD}
           alt="#"
-          className="twinkle absolute w-[6px] h-[8px] right-[20%] top-[200px]"
+          className="twinkle-fast absolute w-[6px] h-[8px] right-[20%] top-[200px]"
         />
         <div className="relative text-center  mt-9 md:text-left">
           <Shadow left={"50px"} top={"70px"} />

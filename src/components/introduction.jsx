@@ -32,15 +32,15 @@ const Intro = () => {
         <img
           src={StarP}
           alt=""
-          className="twinkle-2 absolute w-[8px] h-[10px] top-[28px] right-[50px] md:right-[28%]"
+          className="twinkle-2 absolute w-[8px] h-[10px] top-[28px] right-[50px] md:top-[35px] md:right-[18%]"
         />
 
         <h2 className="mb-3">
-          <span className="text-white text-[20px] font-bold leading-[133%]">
+          <span className="text-white text-[20px] font-bold leading-[133%] md:text-[32px]">
             Introduction to getlinked{" "}
           </span>{" "}
           <br />
-          <span className="text-[#d434fe] text-[20px] font-bold leading-[133%]">
+          <span className="text-[#d434fe] text-[20px] font-bold leading-[133%] md:text-[32px]">
             tech Hackathon 1.0
           </span>
         </h2>
