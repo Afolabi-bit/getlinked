@@ -67,7 +67,7 @@ const FAQ = () => {
         {/* Image */}
         <div className="relative w-full min-h-[400px] md:min-h-[600px] md:mt-30px lg:min-h-[650px] lg:w-[50%] lg:mb-0">
           {/* Question marks */}
-          <div className="absolute top-[18px] left-[70px] flex gap-[49px] md:left-[200px] md:top-[48px] md:gap-[70px] lg:left-[50px] lg:top-[100px] ">
+          <div className="absolute top-[18px] left-[70px] flex gap-[49px] md:left-[200px] md:top-[48px] md:gap-[70px] lg:left-[50px] lg:top-[110px] ">
             <img
               src={StarG}
               alt="#"
