@@ -181,6 +181,16 @@ nav li > a:hover {
   bottom: 300px;
 }
 
+.answer {
+  transition: height 0.3s, opacity 0.2s, tranform 0.3s;
+}
+
+.show > .answer {
+  height: fit-content;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (min-width: 800px) {
   .hero-shadow {
     left: 15%;

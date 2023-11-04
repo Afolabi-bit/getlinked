@@ -26,7 +26,7 @@ const Criteria = () => {
       <Shadow dist={"criteria-shadow-top"} />
       <Shadow dist={"criteria-shadow-bottom"} />
 
-      <article className="mt-[70px] w-full flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[20px] lg:px-[5rem] lg:mb-0">
+      <article className="my-[70px] w-full flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[20px] lg:px-[5rem] ">
         <div className="relative w-full min-h-[320px] md:min-h-[550px] lg:min-h-[650px] lg:w-[50%] lg:mb-0">
           <img
             src={Image}
@@ -39,7 +39,7 @@ const Criteria = () => {
             className="absolute hidden w-[134px] h-[134px] lg:block lg:top-[43px] lg:left-[45px]"
           />
         </div>
-        <div className="text-center px-8 relative mb-[70px] md:px-[3rem] 0 lg:w-[50%] lg:text-left">
+        <div className="text-center px-8 relative  md:px-[3rem] lg:w-[50%] lg:text-left">
           <h2 className="mb-3 ">
             <span className="text-white text-[20px] font-bold leading-[133%] md:text-[32px]">
               Judging Criteria
