@@ -76,9 +76,9 @@ nav li > a:hover {
 }
 
 .bg-shadow {
-  background: #8f3aff;
+  background: #8f3aff8f;
   border-radius: 50% 50% 50px 50px;
-  box-shadow: 5px 5px 170px 70px #903aff;
+  box-shadow: 5px 10px 170px 70px #903aff;
 }
 
 .font {
@@ -171,6 +171,16 @@ nav li > a:hover {
   right: 50px;
 }
 
+.criteria-shadow-top {
+  top: 180px;
+  left: 75px;
+}
+
+.criteria-shadow-bottom {
+  right: 0;
+  bottom: 300px;
+}
+
 @media (min-width: 800px) {
   .hero-shadow {
     left: 15%;
@@ -188,6 +198,18 @@ nav li > a:hover {
     right: 50px;
     scale: 2;
   }
+
+  .criteria-shadow-top {
+    top: 290px;
+    scale: 1.2;
+    left: 230px;
+  }
+
+  .criteria-shadow-bottom {
+    right: 50px;
+    bottom: 300px;
+    scale: 1.2;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -201,6 +223,18 @@ nav li > a:hover {
     left: 50%;
     top: 10%;
     translate: 00% -50%;
+    scale: 1.2;
+  }
+
+  .criteria-shadow-top {
+    top: 410px;
+    scale: 1.2;
+    left: 230px;
+  }
+
+  .criteria-shadow-bottom {
+    right: 50px;
+    bottom: 180px;
     scale: 1.2;
   }
 }

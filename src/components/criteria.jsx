@@ -1,6 +1,6 @@
-import { Line } from "./utils";
+import { Line, Shadow } from "./utils";
 import Image from "../assets/8046554.png";
-import Ellipse from "../assets/ellipse.svg";
+import Ellipse from "../assets/Ellipse.svg";
 import StarW from "../assets/star-white.svg";
 import StarD from "../assets/star-dim.svg";
 import StarP from "../assets/star-purple.svg";
@@ -23,8 +23,10 @@ const Criteria = () => {
         alt="#"
         className="absolute bottom-[100px] right-[18%] twinkle-fast md:right-[27%] lg:right-[55%] lg:bottom-[120px] "
       />
+      <Shadow dist={"criteria-shadow-top"} />
+      <Shadow dist={"criteria-shadow-bottom"} />
 
-      <article className="my-[70px] w-full flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[20px] lg:px-[5rem] lg:mb-0">
+      <article className="mt-[70px] w-full flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[20px] lg:px-[5rem] lg:mb-0">
         <div className="relative w-full min-h-[320px] md:min-h-[550px] lg:min-h-[650px] lg:w-[50%] lg:mb-0">
           <img
             src={Image}
