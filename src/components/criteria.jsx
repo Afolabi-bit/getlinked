@@ -11,27 +11,31 @@ const Criteria = () => {
       <img
         src={StarP}
         alt="#"
-        className="absolute left-[45%] top-[-35px] twinkle-2 md:left-[50%] md:top-[-15px]"
+        className="absolute left-[45%] top-[-35px] twinkle-2 md:left-[50%] md:top-[-15px] lg:left-[14%] lg:top-[0] "
       />
       <img
         src={StarD}
         alt="#"
-        className="absolute  top-[190px] left-[60%] twinkle-2 md:left-[60%] md:top-[290px]"
+        className="absolute top-[190px] left-[60%] twinkle-2 md:left-[60%] md:top-[290px] lg:left-[31%] lg:top-[310px] "
       />
       <img
         src={StarW}
         alt="#"
-        className="absolute bottom-[100px] right-[18%] twinkle-fast md:right-[27%]"
+        className="absolute bottom-[100px] right-[18%] twinkle-fast md:right-[27%] lg:right-[55%] lg:bottom-[120px] "
       />
 
-      <article className="my-[70px]">
-        <div className="relative w-full min-h-[320px] md:min-h-[550px]">
+      <article className="my-[70px] w-full flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[20px] lg:px-[5rem] lg:mb-0">
+        <div className="relative w-full min-h-[320px] md:min-h-[550px] lg:min-h-[650px] lg:w-[50%] lg:mb-0">
           <img
             src={Image}
             alt="#"
             className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full  z-10 md:w-[80%] lg:w-[100%]"
           />
-          <img src={Ellipse} alt="#" className="absolute hidden  " />
+          <img
+            src={Ellipse}
+            alt="#"
+            className="absolute hidden w-[134px] h-[134px] lg:block lg:top-[43px] lg:left-[45px]"
+          />
         </div>
         <div className="text-center px-8 relative mb-[70px] md:px-[3rem] 0 lg:w-[50%] lg:text-left">
           <h2 className="mb-3 ">
@@ -43,8 +47,8 @@ const Criteria = () => {
               Key attributes
             </span>
           </h2>
-          <div className="text-center ">
-            <p className="mb-[10px] md:w-[70%] md:mb-[20px] md:mx-auto">
+          <div className="text-center flex flex-col items-center lg:items-start lg:text-left">
+            <p className="mb-[10px] md:w-[70%] md:mb-[20px] lg:w-[100%] lg:mb-[10px]">
               <span className="text-[#FF26B9] text-[13px] font-bold leading-[173.5%]">
                 Innovation and Creativity:
               </span>
@@ -55,7 +59,7 @@ const Criteria = () => {
                 introduces innovative features.
               </span>
             </p>{" "}
-            <p className="mb-[10px] md:w-[70%] md:mb-[20px] md:mx-auto">
+            <p className="mb-[10px] md:w-[70%] md:mb-[20px] lg:w-[100%] lg:mb-[10px]">
               <span className="text-[#FF26B9] text-[13px] font-bold leading-[173.5%]">
                 Functionality:
               </span>
@@ -66,7 +70,7 @@ const Criteria = () => {
                 consider the completeness and robustness of the solution.
               </span>
             </p>{" "}
-            <p className="mb-[10px] md:w-[70%] md:mb-[20px] md:mx-auto">
+            <p className="mb-[10px] md:w-[70%] md:mb-[20px] lg:w-[100%] lg:mb-[10px]">
               <span className="text-[#FF26B9] text-[13px] font-bold leading-[173.5%]">
                 Impact and Relevance:
               </span>
@@ -78,7 +82,7 @@ const Criteria = () => {
                 social, economic, or environmental benefits.
               </span>
             </p>{" "}
-            <p className="mb-[10px] md:w-[70%] md:mb-[20px] md:mx-auto">
+            <p className="mb-[10px] md:w-[70%] md:mb-[20px] lg:w-[100%] lg:mb-[10px]">
               <span className="text-[#FF26B9] text-[13px] font-bold leading-[173.5%]">
                 Technical Complexity:
               </span>
@@ -89,7 +93,7 @@ const Criteria = () => {
                 technologies or algorithms, and the scalability of the solution.
               </span>
             </p>{" "}
-            <p className="mb-[10px] md:w-[70%] md:mb-[20px] md:mx-auto">
+            <p className="mb-[10px] md:w-[70%] md:mb-[20px] lg:w-[100%] lg:mb-[10px]">
               <span className="text-[#FF26B9] text-[13px] font-bold leading-[173.5%]">
                 Adherence to Hackathon Rules:
               </span>

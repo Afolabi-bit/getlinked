@@ -7,8 +7,8 @@ import { Line } from "./utils";
 const Intro = () => {
   return (
     <section className="w-screen">
-      <article className="w-full flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[40px] lg:px-[5rem]">
-        <div className="big-idea w-full min-h-[320px]  mb-10 relative md:min-h-[750px] lg:min-h-[650px] lg:w-[40%] lg:mb-0">
+      <article className="w-full flex flex-col items-center lg:flex-row lg:justify-between lg:gap-[20px] lg:px-[5rem]">
+        <div className=" w-full min-h-[320px]  mb-10 relative md:min-h-[750px] lg:min-h-[650px] lg:w-[40%] lg:mb-0">
           <p className="z-10 absolute w-full top-[50%] left-[50%] text-center translate-x-[-50%] translate-y-[-20%] text-white text-[14px] font-bold md:text-[20px] ">
             The Big <br /> Idea!
           </p>
