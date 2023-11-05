@@ -136,6 +136,30 @@ const Timeline = () => {
             </div>
           </div>
           {/*  */}
+
+          <div className="flex items-end gap-[15px] mb-[30px] ">
+            <div className="flex flex-col items-center">
+              <p className="w-[2px] min-h-[77px] bg-[#D434FE]"></p>
+              <p className="mt-[10px] timeline-num rounded-[27px] w-[19.3px] h-[19.3px] text-[12px] font-bold ">
+                6
+              </p>
+            </div>
+            {/*  */}
+
+            <div className="text-left flex flex-col justify-between h-[100px] w-[]">
+              <h3 className="text-[#D434FE] text-[12px] font-bold ">
+                Demo Day
+              </h3>
+              <p className="mb-[10px] text-[12px] font-normal leading-[159.9%] ">
+                Teams get the opportunity to pitch their projects to judges. The
+                winner of the hackathon will also be announced on this day
+              </p>
+              <h3 className="text-[12px] font-bold text-[#D434FE] ">
+                November 18, 2023
+              </h3>
+            </div>
+          </div>
+          {/*  */}
         </div>
       </article>
       <Line />
