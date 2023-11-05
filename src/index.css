@@ -196,6 +196,10 @@ nav li > a:hover {
   font-family: "MADE TOMMY Outline", sans-serif;
 }
 
+.timeline-num {
+  background: linear-gradient(270deg, #903aff 0%, #d434fe 100%);
+}
+
 @media (min-width: 800px) {
   .hero-shadow {
     left: 15%;
