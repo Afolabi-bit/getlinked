@@ -1,8 +1,26 @@
+import StarW from "../assets/star-white.svg";
+import StarD from "../assets/star-dim.svg";
+import StarP from "../assets/star-purple.svg";
 import { Line } from "./utils";
 
 const Timeline = () => {
   return (
-    <section className="text-center w-full">
+    <section className="text-center relative w-full">
+      <img
+        src={StarD}
+        alt="#"
+        className="absolute twinkle-2 bottom-[60px] left-[2rem]"
+      />
+      <img
+        src={StarW}
+        alt="#"
+        className="absolute top-[50%] right-[20%] twinkle-fast"
+      />
+      <img
+        src={StarP}
+        alt="#"
+        className="absolute twinkle-2 top-[16%] left-[22%] "
+      />
       <article className="py-[70px] px-[2.5rem]  text-center ">
         <h2 className="mb-3 ">
           <span className="text-white text-[20px] font-bold leading-[133%] md:text-[32px]">
@@ -13,8 +31,7 @@ const Timeline = () => {
           Here is the breakdown of the time we anticipate using for the upcoming
           event.
         </p>
-
-        <div className="mt-5">
+        <div className="mt-10">
           {/*  */}
 
           <div className="flex items-end gap-[15px] mb-[30px]">
