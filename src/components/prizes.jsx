@@ -1,4 +1,5 @@
 import { Shadow } from "./utils";
+import Trophy from "../assets/9486889.png";
 
 const PrizesAndRewards = () => {
   return (
@@ -12,6 +13,18 @@ const PrizesAndRewards = () => {
       <p className="text-center text-[12px] font-normal leading-[171%] ">
         Highlight of the prizes or rewards for winners and for participants.
       </p>
+      <article className="flex mt-[40px] flex-col">
+        <img src={Trophy} alt="#" />
+        <div className="flex">
+          <div className="relative w-1/3">
+            <p>
+              2nd <br />
+              Runner
+            </p>
+            <p>N300,000</p>
+          </div>
+        </div>
+      </article>
     </section>
   );
 };
