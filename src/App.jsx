@@ -3,6 +3,7 @@ import FAQ from "./components/faq";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Intro from "./components/introduction";
+import PrizesAndRewards from "./components/prizes";
 import Rules from "./components/rules";
 import Timeline from "./components/timeline";
 
@@ -16,6 +17,7 @@ const App = () => {
       <Criteria />
       <FAQ />
       <Timeline />
+      <PrizesAndRewards />
     </main>
   );
 };

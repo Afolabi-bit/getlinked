@@ -181,6 +181,9 @@ nav li > a:hover {
   bottom: 300px;
 }
 
+.prizes-shadow-top {
+}
+
 .answer {
   transition: height 0.3s, opacity 0.2s, tranform 0.3s;
 }

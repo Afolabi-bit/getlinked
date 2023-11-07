@@ -1,7 +1,6 @@
 import StarW from "../assets/star-white.svg";
 import StarD from "../assets/star-dim.svg";
 import StarP from "../assets/star-purple.svg";
-import { Line } from "./utils";
 
 const Timeline = () => {
   return (
@@ -182,7 +181,7 @@ const Timeline = () => {
         </div>
 
         {/* Timeline for medium and large screens */}
-        <div className="mt-10 w-[650px] mx-auto">
+        <div className="hidden md:block mt-10 w-[650px] mx-auto">
           <div className="flex items-end gap-[45px] mb-[30px]">
             {/*  */}
             <div className="text-left w-[45%]">
@@ -345,7 +344,6 @@ const Timeline = () => {
           {/*  */}
         </div>
       </article>
-      <Line />
     </section>
   );
 };
