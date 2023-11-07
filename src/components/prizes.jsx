@@ -1,5 +1,8 @@
 import { Shadow } from "./utils";
 import Trophy from "../assets/9486889.png";
+import gold from "../assets/gold_medal.png";
+import silver from "../assets/silver_medal.png";
+import bronze from "../assets/bronze_medal.png";
 
 const PrizesAndRewards = () => {
   return (
@@ -17,11 +20,28 @@ const PrizesAndRewards = () => {
         <img src={Trophy} alt="#" />
         <div className="flex">
           <div className="relative w-1/3">
+            <img src={silver} alt="" />
             <p>
               2nd <br />
               Runner
             </p>
             <p>N300,000</p>
+          </div>
+          <div className="relative w-1/3">
+            <img src={gold} alt="" />
+            <p>
+              1st <br />
+              Runner
+            </p>
+            <p>N400,000</p>
+          </div>
+          <div className="relative w-1/3">
+            <img src={bronze} alt="" />
+            <p>
+              3rd <br />
+              Runner
+            </p>
+            <p>N500,000</p>
           </div>
         </div>
       </article>
