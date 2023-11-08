@@ -44,7 +44,7 @@ const PrizesAndRewards = () => {
         />
 
         <div className="relative flex justify-center items-center gap-[15px] mt-[120px]">
-          <div className="lg:w-[300px] absolute top-[-270px] left-[50%] translate-x-[-50%] text-left">
+          <div className="hidden lg:block lg:w-[300px] absolute top-[-270px] left-[50%] translate-x-[-50%] text-left">
             <h2 className=" mb-3">
               <span className="text-[20px] font-bold">Prizes and</span>
               <br />
