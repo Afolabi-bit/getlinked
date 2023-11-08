@@ -18,8 +18,8 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="w-[80%] h-40 border py-[30px] rounded-[5px] border-[#d434fe]">
-          <div className="flex justify-center translate-x-[2px] mb-[10px] w-full">
+        <div className="relative w-[80%] h-40 border py-[30px] rounded-[5px] border-[#d434fe]">
+          <div className="flex justify-center mb-[10px] w-full">
             <div className="w-[30%] flex justify-center">
               <img
                 src={LA}
@@ -45,13 +45,22 @@ const Partners = () => {
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div className="absolute top-[50%] left-[35%] translate-y-[-50%] h-[70%] justify-between flex flex-col">
+            <p className="w-[2px] h-[39px] bg-[#d434fe]"></p>
+            <p className="w-[2px] h-[39px] bg-[#d434fe]"></p>
+          </div>
+          <div className="absolute top-[50%] right-[35%] translate-y-[-50%] h-[70%] justify-between flex flex-col">
+            <p className="w-[2px] h-[39px] bg-[#d434fe]"></p>
+            <p className="w-[2px] h-[39px] bg-[#d434fe]"></p>
+          </div>
+
+          <div className="flex translate-y-[5px] justify-center">
             <p className="w-[68px] h-[2px] bg-[#d434fe]"></p>
             <p className="w-[68px] h-[2px] bg-[#d434fe] mx-6"></p>
             <p className="w-[68px] h-[2px] bg-[#d434fe]"></p>
           </div>
 
-          <div className="flex justify-center translate-x-[2px] mt-[10px] w-full">
+          <div className="flex justify-center  mt-[20px] w-full">
             <div className="w-[30%] flex justify-center">
               <img
                 src={Whisper}
