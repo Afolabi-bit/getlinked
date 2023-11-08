@@ -181,7 +181,14 @@ nav li > a:hover {
   bottom: 300px;
 }
 
-.prizes-shadow-top {
+.prizes-top {
+  top: 35%;
+  left: 30%;
+}
+
+.prizes-bottom {
+  bottom: 18%;
+  right: 0%;
 }
 
 .answer {
