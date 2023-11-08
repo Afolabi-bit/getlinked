@@ -25,7 +25,12 @@ const Partners = () => {
           <img
             src={StarG}
             alt="#"
-            className="top-[0px] left-[30px] absolute twinkle-2"
+            className="top-[0px] left-[30px] absolute twinkle-2 md:top-[10px] md:left-[15%]"
+          />
+          <img
+            src={StarG}
+            alt="#"
+            className="hidden absolute twinkle-2 md:block md:top-[27%] md:left-[60%]"
           />
           <img
             src={StarW}
@@ -89,16 +94,16 @@ const Partners = () => {
             </div>
 
             <div className="w-1/3 flex justify-center items-center">
-              <p className="font text-[12px] font-normal leading-[27.5px] md:scale-[2]">
+              <p className="font pointer-events-none text-[12px] font-normal leading-[27.5px] md:scale-[2]">
                 pay<span className="text-[#00A3FF]">box</span>{" "}
               </p>
             </div>
 
             <div className="relative flex items-center justify-center w-1/3">
-              <p className="text-[12px] volkhov font-normal md:scale-[2]">
+              <p className="text-[12px] pointer-events-none volkhov font-normal md:scale-[2]">
                 Vuzual <span className="text-[#f00]">Plus</span>
               </p>
-              <span className="voces text-[4px] absolute bottom-[2px] right-[15px] md:scale-[2] md:right-[50px] md:bottom-[-4px]">
+              <span className="voces text-[4px] absolute bottom-[2px] right-[15px] md:scale-[2] md:right-[50px] md:bottom-[-4px] lg:right-[100px]">
                 Design Studios
               </span>
             </div>
