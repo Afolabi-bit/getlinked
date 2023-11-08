@@ -11,7 +11,7 @@ const Partners = () => {
     <section className="">
       <Shadow dist={"partners-shadow-top"} />
       <article className="py-[70px] flex flex-col items-center">
-        <div className="w-[80%] mx-auto mb-[40px] text-center md:w-[60%]">
+        <div className="w-[80%] mx-auto mb-[40px] text-center md:w-[60%] lg:w-[40%]">
           <h2 className="text-[20px] font-bold leading-[27.5px]">
             Partners and Sponsors
           </h2>
@@ -21,7 +21,7 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="relative w-[333px] h-40 border py-[30px] rounded-[5px] border-[#d434fe] md:w-[660px] md:h-[270px] md:flex md:flex-col md:justify-evenly">
+        <div className="relative w-[333px] h-40 border py-[30px] rounded-[5px] border-[#d434fe] md:w-[660px] md:h-[270px] md:flex md:flex-col md:justify-evenly lg:w-[900px]">
           <img
             src={StarG}
             alt="#"
@@ -58,24 +58,24 @@ const Partners = () => {
             </div>
           </div>
 
-          <div className="absolute top-[50%] left-[111px] translate-y-[-50%] h-[70%] justify-between flex flex-col md:left-[220px]">
+          <div className="absolute top-[50%] left-[111px] translate-y-[-50%] h-[70%] justify-between flex flex-col md:left-[220px] lg:left-[300px]">
             <p className="w-[2px] h-[39px] bg-[#d434fe] md:h-[65px]"></p>
             <p className="w-[2px] h-[39px] bg-[#d434fe] md:h-[65px]"></p>
           </div>
-          <div className="absolute top-[50%] right-[111px] translate-y-[-50%] h-[70%] justify-between flex flex-col md:right-[220px]">
+          <div className="absolute top-[50%] right-[111px] translate-y-[-50%] h-[70%] justify-between flex flex-col md:right-[220px] lg:right-[300px]">
             <p className="w-[2px] h-[39px] bg-[#d434fe] md:h-[65px]"></p>
             <p className="w-[2px] h-[39px] bg-[#d434fe] md:h-[65px]"></p>
           </div>
 
           <div className="flex translate-y-[5px] justify-center w-full">
             <div className="w-1/3 flex justify-center">
-              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px]"></p>
+              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px] lg:w-[184px]"></p>
             </div>
             <div className="w-1/3 flex justify-center">
-              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px]"></p>
+              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px] lg:w-[184px]"></p>
             </div>
             <div className="w-1/3 flex justify-center">
-              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px]"></p>
+              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px] lg:w-[184px]"></p>
             </div>
           </div>
 
