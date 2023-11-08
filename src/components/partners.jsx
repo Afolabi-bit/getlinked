@@ -44,10 +44,36 @@ const Partners = () => {
               />
             </div>
           </div>
+
           <div className="flex justify-center">
             <p className="w-[68px] h-[2px] bg-[#d434fe]"></p>
             <p className="w-[68px] h-[2px] bg-[#d434fe] mx-6"></p>
             <p className="w-[68px] h-[2px] bg-[#d434fe]"></p>
+          </div>
+
+          <div className="flex justify-center translate-x-[2px] mt-[10px] w-full">
+            <div className="w-[30%] flex justify-center">
+              <img
+                src={Whisper}
+                alt="#"
+                className="w-[39px] h-[30px] object-cover"
+              />
+            </div>
+
+            <div className="w-[30%] flex justify-center items-center">
+              <p className="font text-[12px] font-normal leading-[27.5px]">
+                pay<span className="text-[#00A3FF]">box</span>{" "}
+              </p>
+            </div>
+
+            <div className="relative flex items-center justify-center w-[30%]">
+              <p className="text-[12px] volkhov font-normal">
+                Vuzual <span className="text-[#f00]">Plus</span>
+              </p>
+              <span className="voces text-[4px] absolute bottom-[2px] right-[15px]">
+                Design Studios
+              </span>
+            </div>
           </div>
         </div>
       </article>
