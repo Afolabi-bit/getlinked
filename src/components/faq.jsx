@@ -1,7 +1,7 @@
 import { Line, QuestionAnswer } from "./utils";
-import StarW from "../assets/star-white.svg";
 import StarD from "../assets/star-dim.svg";
 import StarP from "../assets/star-purple.svg";
+import StarW from "../assets/star-white.svg";
 import StarG from "../assets/star-gra.svg";
 import Image from "../assets/faq.png";
 

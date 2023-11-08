@@ -3,6 +3,8 @@ import LA from "../assets/liberty_assured.png";
 import LP from "../assets/liberty_pay.png";
 import Whisper from "../assets/whisper.png";
 import Winwise from "../assets/winwise.png";
+import StarW from "../assets/star-white.svg";
+import StarG from "../assets/star-gra.svg";
 
 const Partners = () => {
   return (
@@ -20,6 +22,16 @@ const Partners = () => {
         </div>
 
         <div className="relative w-[80%] h-40 border py-[30px] rounded-[5px] border-[#d434fe]">
+          <img
+            src={StarG}
+            alt="#"
+            className="top-[0px] left-[30px] absolute twinkle-2"
+          />
+          <img
+            src={StarW}
+            alt="#"
+            className="right-[25%] twinkle-fast bottom-[10px] absolute"
+          />
           <div className="flex justify-center mb-[10px] w-full">
             <div className="w-[30%] flex justify-center">
               <img
