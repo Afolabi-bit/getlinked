@@ -1,4 +1,4 @@
-import { Line } from "./utils";
+import { Line, Shadow } from "./utils";
 import LA from "../assets/liberty_assured.png";
 import LP from "../assets/liberty_pay.png";
 import Whisper from "../assets/whisper.png";
@@ -7,6 +7,7 @@ import Winwise from "../assets/winwise.png";
 const Partners = () => {
   return (
     <section className="">
+      <Shadow dist={"partners-shadow-top"} />
       <article className="py-[70px] flex flex-col items-center">
         <div className="w-[80%] mx-auto mb-[40px] text-center">
           <h2 className="text-[20px] font-bold leading-[27.5px]">
@@ -86,6 +87,7 @@ const Partners = () => {
           </div>
         </div>
       </article>
+      <Shadow dist={"partners-shadow-bottom"} />
       <Line />
     </section>
   );

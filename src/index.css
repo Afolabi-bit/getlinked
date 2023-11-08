@@ -199,6 +199,10 @@ nav li > a:hover {
   right: 0%;
 }
 
+.partners-shadow-bottom {
+  right: 0;
+}
+
 .answer {
   transition: height 0.3s, opacity 0.2s, tranform 0.3s;
 }
