@@ -11,7 +11,7 @@ const Partners = () => {
     <section className="">
       <Shadow dist={"partners-shadow-top"} />
       <article className="py-[70px] flex flex-col items-center">
-        <div className="w-[80%] mx-auto mb-[40px] text-center">
+        <div className="w-[80%] mx-auto mb-[40px] text-center md:w-[60%]">
           <h2 className="text-[20px] font-bold leading-[27.5px]">
             Partners and Sponsors
           </h2>
@@ -21,7 +21,7 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="relative w-[333px] h-40 border py-[30px] rounded-[5px] border-[#d434fe]">
+        <div className="relative w-[333px] h-40 border py-[30px] rounded-[5px] border-[#d434fe] md:w-[660px] md:h-[270px] md:flex md:flex-col md:justify-evenly">
           <img
             src={StarG}
             alt="#"
@@ -33,72 +33,72 @@ const Partners = () => {
             className="right-[25%] twinkle-fast bottom-[10px] absolute"
           />
           <div className="flex justify-center mb-[10px] w-full">
-            <div className="w-[30%] flex justify-center">
+            <div className="w-1/3 flex justify-center">
               <img
                 src={LA}
                 alt="#"
-                className="w-[32px] h-[30px] object-cover"
+                className="w-[32px] h-[30px] object-cover md:scale-[2]"
               />
             </div>
 
-            <div className="w-[30%] flex justify-center items-center">
+            <div className="w-1/3 flex justify-center items-center">
               <img
                 src={LP}
                 alt="#"
-                className="w-[57px]  h-[10px] object-cover"
+                className="w-[57px]  h-[10px] object-cover md:scale-[2]"
               />
             </div>
 
-            <div className="flex justify-center w-[30%]">
+            <div className="flex justify-center w-1/3">
               <img
                 src={Winwise}
                 alt="#"
-                className="w-[35px] h-[28px] object-cover"
+                className="w-[35px] h-[28px] object-cover md:scale-[2]"
               />
             </div>
           </div>
 
-          <div className="absolute top-[50%] left-[111px] translate-y-[-50%] h-[70%] justify-between flex flex-col">
-            <p className="w-[2px] h-[39px] bg-[#d434fe]"></p>
-            <p className="w-[2px] h-[39px] bg-[#d434fe]"></p>
+          <div className="absolute top-[50%] left-[111px] translate-y-[-50%] h-[70%] justify-between flex flex-col md:left-[220px]">
+            <p className="w-[2px] h-[39px] bg-[#d434fe] md:h-[65px]"></p>
+            <p className="w-[2px] h-[39px] bg-[#d434fe] md:h-[65px]"></p>
           </div>
-          <div className="absolute top-[50%] right-[111px] translate-y-[-50%] h-[70%] justify-between flex flex-col">
-            <p className="w-[2px] h-[39px] bg-[#d434fe]"></p>
-            <p className="w-[2px] h-[39px] bg-[#d434fe]"></p>
+          <div className="absolute top-[50%] right-[111px] translate-y-[-50%] h-[70%] justify-between flex flex-col md:right-[220px]">
+            <p className="w-[2px] h-[39px] bg-[#d434fe] md:h-[65px]"></p>
+            <p className="w-[2px] h-[39px] bg-[#d434fe] md:h-[65px]"></p>
           </div>
 
           <div className="flex translate-y-[5px] justify-center w-full">
-            <div className="w-[111px] flex justify-center">
-              <p className="w-[68px] h-[2px] bg-[#d434fe]"></p>
+            <div className="w-1/3 flex justify-center">
+              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px]"></p>
             </div>
-            <div className="w-[111px] flex justify-center">
-              <p className="w-[68px] h-[2px] bg-[#d434fe]"></p>
+            <div className="w-1/3 flex justify-center">
+              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px]"></p>
             </div>
-            <div className="w-[111px] flex justify-center">
-              <p className="w-[68px] h-[2px] bg-[#d434fe]"></p>
+            <div className="w-1/3 flex justify-center">
+              <p className="w-[68px] h-[2px] bg-[#d434fe] md:w-[135px]"></p>
             </div>
           </div>
 
           <div className="flex justify-center  mt-[20px] w-full">
-            <div className="w-[30%] flex justify-center">
+            <div className="w-1/3 flex justify-center">
               <img
                 src={Whisper}
                 alt="#"
-                className="w-[39px] h-[30px] object-cover"
+                className="w-[39px] h-[30px] object-cover md:scale-[2]"
               />
             </div>
 
-            <div className="w-[30%] flex justify-center items-center">
-              <p className="font text-[12px] font-normal leading-[27.5px]">
+            <div className="w-1/3 flex justify-center items-center">
+              <p className="font text-[12px] font-normal leading-[27.5px] md:scale-[2]">
                 pay<span className="text-[#00A3FF]">box</span>{" "}
               </p>
             </div>
 
-            <div className="relative flex items-center justify-center w-[30%]">
-              <p className="text-[12px] volkhov font-normal">
+            <div className="relative flex items-center justify-center w-1/3">
+              <p className="text-[12px] volkhov font-normal md:scale-[2]">
                 Vuzual <span className="text-[#f00]">Plus</span>
               </p>
-              <span className="voces text-[4px] absolute bottom-[2px] right-[15px]">
+              <span className="voces text-[4px] absolute bottom-[2px] right-[15px] md:scale-[2] md:right-[50px] md:bottom-[-4px]">
                 Design Studios
               </span>
             </div>
