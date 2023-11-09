@@ -1,5 +1,5 @@
-import StarW from "../assets/star-white.svg";
 import StarD from "../assets/star-dim.svg";
+import StarW from "../assets/star-white.svg";
 import StarP from "../assets/star-purple.svg";
 
 const Timeline = () => {

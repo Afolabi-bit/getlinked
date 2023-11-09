@@ -1,8 +1,22 @@
+import StarD from "../assets/star-dim.svg";
+import StarW from "../assets/star-white.svg";
+import StarP from "../assets/star-purple.svg";
+
 const PrivacyPolicy = () => {
   return (
     <section className="py-[70px] px-[2rem]">
       <article>
-        <div>
+        <div className="relative">
+          <img
+            src={StarD}
+            alt="#"
+            className="absolute right-[25%] top-[-20px] twinkle-2"
+          />
+          <img
+            src={StarP}
+            alt="#"
+            className="absolute right-[16%] top-[18%] twinkle-fast"
+          />
           <div className="text-center">
             <h2 className="text-[20px] font-bold  ">
               <span>Privacy Policy and</span>
@@ -28,7 +42,12 @@ const PrivacyPolicy = () => {
               participating in our event, you consent to the practices described
               in this policy.
             </p>
-            <div>
+            <div className="relative">
+              <img
+                src={StarP}
+                alt="#"
+                className="absolute twinkle-2 left-[-40px] top-[120px]"
+              />
               <h3 className="text-[#d434fe] text-[13px] font-bold leading-[28px]">
                 Licensing Policy
               </h3>
