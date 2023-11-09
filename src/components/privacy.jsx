@@ -1,11 +1,14 @@
 import StarD from "../assets/star-dim.svg";
 import StarW from "../assets/star-white.svg";
 import StarP from "../assets/star-purple.svg";
+import Shield from "../assets/shield_lock.svg";
+import Lock from "../assets/lock.png";
 
 const PrivacyPolicy = () => {
   return (
     <section className="py-[70px] px-[2rem]">
       <article>
+        {/* TEXT */}
         <div className="relative">
           <img
             src={StarD}
@@ -102,6 +105,40 @@ const PrivacyPolicy = () => {
               Read More
             </button>
           </div>
+        </div>
+
+        {/* IMAGE */}
+        <div className="relative mt-[70px] h-[450px]">
+          <img
+            src={StarP}
+            alt="#"
+            className="absolute top-[20%] left-0 twinkle-2"
+          />
+          <img
+            src={StarW}
+            alt="#"
+            className="absolute top-[23%] right-[25%] twinkle-2"
+          />
+          <img
+            src={StarW}
+            alt="#"
+            className="absolute bottom-[15%] left-[25%] twinkle-2"
+          />
+          <img
+            src={StarD}
+            alt="#"
+            className="absolute bottom-[12%] right-[5%] twinkle-2"
+          />
+          <img
+            src={Shield}
+            alt="#"
+            className="absolute top-0 left-[50%] translate-x-[-50%] w-[390px] h-[311px]"
+          />
+          <img
+            src={Lock}
+            alt="#"
+            className="absolute bottom-0 left-[10%] w-[262px] h-[351px]"
+          />
         </div>
       </article>
     </section>
