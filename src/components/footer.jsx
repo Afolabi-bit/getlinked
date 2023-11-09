@@ -22,6 +22,7 @@ const Footer = () => {
         <h3 className="text-[#d434fe] text-[14px] font-semibold leading-[24px] mb-[7px]">
           Useful Links
         </h3>
+
         <ul className="mb-[5px]">
           <li>
             <a
