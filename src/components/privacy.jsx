@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
           <img
             src={StarW}
             alt="#"
-            className="absolute bottom-[15%] left-[25%] twinkle-2"
+            className="absolute bottom-[15%] left-[25%] twinkle-fast"
           />
           <img
             src={StarD}
