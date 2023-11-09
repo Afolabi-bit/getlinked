@@ -63,7 +63,12 @@ nav li > a {
   transition: all 0.3s;
 }
 
-nav li > a:hover {
+.bg-gra {
+  transition: all 0.3s;
+}
+
+nav li > a:hover,
+.bg-gra:hover {
   background: linear-gradient(
     270deg,
     #903aff 0%,

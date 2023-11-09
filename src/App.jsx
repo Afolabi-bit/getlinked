@@ -1,5 +1,6 @@
 import Criteria from "./components/criteria";
 import FAQ from "./components/faq";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Intro from "./components/introduction";
@@ -22,6 +23,7 @@ const App = () => {
       <PrizesAndRewards />
       <Partners />
       <PrivacyPolicy />
+      <Footer />
     </main>
   );
 };
