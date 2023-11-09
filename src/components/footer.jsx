@@ -13,7 +13,7 @@ const Footer = () => {
         </p>
         <p className="text-[12px] font-normal leading-[20px] mt-[35px]">
           Terms of Use{" "}
-          <span className=" h-[20px] translate-y-[5px] inline-block w-[2px] bg-[#d434fe] mx-[8px]"></span>{" "}
+          <span className=" h-[16px] translate-y-[5px] inline-block w-[2px] bg-[#d434fe] mx-[8px]"></span>{" "}
           Privacy Policy
         </p>
       </div>
