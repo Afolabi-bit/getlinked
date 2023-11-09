@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
                 height="17"
                 viewBox="0 0 17 17"
                 fill="none"
-                className="w-[17px] h-[17px]"
+                className="w-[27px] h-[27px]"
               >
                 <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100" />
                 <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2" />
@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
                 height="17"
                 viewBox="0 0 17 17"
                 fill="none"
-                className="w-[17px] h-[17px]"
+                className="w-[27px] h-[27px]"
               >
                 <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100" />
                 <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2" />
