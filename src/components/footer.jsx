@@ -1,3 +1,7 @@
+import X from "../assets/x.svg";
+import Instagram from "../assets/instagram.png";
+import Facebook from "../assets/facebook.png";
+
 const Footer = () => {
   return (
     <footer className="flex flex-col px-[3rem] py-[70px] bg-[#100B20]">
