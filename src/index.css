@@ -229,6 +229,14 @@ nav li > a:hover,
   background: linear-gradient(270deg, #903aff 0%, #d434fe 100%);
 }
 
+.socials svg path {
+  transition: all 0.3s;
+}
+
+.socials:hover svg path {
+  fill: #d434fe;
+}
+
 @media (min-width: 800px) {
   .hero-shadow {
     left: 15%;
