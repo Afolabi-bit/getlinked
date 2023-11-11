@@ -12,7 +12,7 @@ import Timeline from "./components/timeline";
 
 const App = () => {
   return (
-    <main className="w-screen overflow-hidden mb-52">
+    <main className="w-screen overflow-hidden">
       <Header />
       <Hero />
       <Intro />
