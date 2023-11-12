@@ -7,7 +7,7 @@ import Lock from "../assets/lock.png";
 const PrivacyPolicy = () => {
   return (
     <section className="py-[70px] px-[2rem]">
-      <article className="md:flex md:px-[5rem] md:gap-[50px]">
+      <article className="lg:flex lg:px-[5rem] lg:gap-[50px]">
         {/* TEXT */}
         <div className="relative md:w-[60%] md:mx-auto lg:w-[40%]">
           <img
