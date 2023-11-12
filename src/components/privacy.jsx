@@ -7,9 +7,9 @@ import Lock from "../assets/lock.png";
 const PrivacyPolicy = () => {
   return (
     <section className="py-[70px] px-[2rem]">
-      <article>
+      <article className="md:flex md:px-[5rem] md:gap-[50px]">
         {/* TEXT */}
-        <div className="relative">
+        <div className="relative md:w-[60%] md:mx-auto lg:w-[40%]">
           <img
             src={StarD}
             alt="#"
@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
             alt="#"
             className="absolute right-[16%] top-[18%] twinkle-fast"
           />
-          <div className="text-center">
+          <div className="text-center md:text-left">
             <h2 className="text-[20px] font-bold  ">
               <span>Privacy Policy and</span>
               <br />
@@ -30,14 +30,14 @@ const PrivacyPolicy = () => {
               Last updated on September 12, 2023
             </p>
           </div>
-          <p className="text-[12px] leading-[23px] mx-[1rem] text-center">
+          <p className="text-[12px] leading-[23px] mx-[1rem] text-center md:text-left md:mx-0 ">
             Below are our privacy & policy, which outline a lot of goodies. it’s
             our aim to always take of our participant
           </p>
 
           {/* bordered box */}
-          <div className="py-[50px] flex flex-col items-center  px-[20px] border border-[#d434fe]  rounded-[5px] mt-[30px]">
-            <p className="text-[12px]  text-center font-normal leading-[26px] mb-[30px]">
+          <div className="py-[50px] flex flex-col items-center  px-[20px] border border-[#d434fe]  rounded-[5px] mt-[30px] md:px-[50px] lg:w-full">
+            <p className="text-[12px]  text-center font-normal leading-[26px] mb-[30px] md:text-left">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
               Policy outlines how we collect, use, disclose, and safeguard your
@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
         </div>
 
         {/* IMAGE */}
-        <div className="relative mt-[70px] h-[450px]">
+        <div className="relative mt-[70px] w-[400px] mx-auto h-[450px] md:h-[869.5px]">
           <img
             src={StarP}
             alt="#"
@@ -132,12 +132,12 @@ const PrivacyPolicy = () => {
           <img
             src={Shield}
             alt="#"
-            className="absolute top-0 left-[50%] translate-x-[-50%] w-[390px] h-[311px]"
+            className="absolute top-0 left-[50%] translate-x-[-50%] w-[390px] h-[311px] md:w-[500px] md:h-[600px] "
           />
           <img
             src={Lock}
             alt="#"
-            className="absolute bottom-0 left-[10%] w-[262px] h-[351px]"
+            className="absolute bottom-0 object-contain left-[10%] w-[262px] h-[351px] md:h-[640px] md:w-[520px] md:bottom-[80px] md:left-[-4%]"
           />
         </div>
       </article>
