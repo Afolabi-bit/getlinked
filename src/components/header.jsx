@@ -2,13 +2,13 @@ import Menu from "../assets/menu-btn.svg";
 import Close from "../assets/close_btn.svg";
 import { RegisterBtn } from "./utils";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const navBarRef = useRef(null);
 
   const toggleNavBar = (action) => {
     const navBar = navBarRef.current;
-    console.log(navBar);
 
     action === "close"
       ? navBar.classList.remove("show")
@@ -67,9 +67,9 @@ const Header = () => {
             </a>
           </li>
           <li className="mb-4">
-            <a href="#" className="text-white">
+            <Link href="#" className="text-white">
               Overview
-            </a>
+            </Link>
           </li>
           <li className="mb-4">
             <a href="#" className="text-white">
@@ -77,9 +77,9 @@ const Header = () => {
             </a>
           </li>
           <li className="mb-4">
-            <a href="#" className="text-white">
+            <Link to={"/contact"} className="text-white">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <RegisterBtn />

@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
           </p>
 
           {/* bordered box */}
-          <div className="py-[50px] flex flex-col items-center  px-[20px] border border-[#d434fe]  rounded-[5px] mt-[30px] md:px-[50px] lg:w-full">
+          <div className="py-[50px] bg-[#1C1530] flex flex-col items-center  px-[20px] border border-[#d434fe]  rounded-[5px] mt-[30px] md:px-[50px] lg:w-full">
             <p className="text-[12px]  text-center font-normal leading-[26px] mb-[30px] md:text-left">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
