@@ -40,7 +40,8 @@ h6 {
   flex-shrink: 0;
 }
 
-.close-btn {
+.close-btn,
+.back-btn {
   background: linear-gradient(
     270deg,
     #903aff 0%,
