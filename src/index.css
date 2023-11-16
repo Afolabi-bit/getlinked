@@ -38,6 +38,16 @@ h6 {
   );
   height: 53px;
   flex-shrink: 0;
+  pointer-events: all;
+  transition: all 0.5s;
+}
+
+.unchecked {
+  border-radius: 4px;
+  height: 53px;
+  background: #cccccc38;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .close-btn,

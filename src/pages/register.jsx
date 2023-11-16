@@ -2,7 +2,7 @@ import Image from "../assets/graphic-designer.png";
 import Line from "../assets/dotted-line.svg";
 import Woman from "../assets/woman-emoji.svg";
 import Man from "../assets/man-emoji.svg";
-import { MobileForm } from "../components/utils";
+import RegisterForm from "../components/Form";
 
 const Register = () => {
   return (
@@ -19,8 +19,7 @@ const Register = () => {
           </div>
         </div>
         <p className="text-[20px] font-normal">CREATE YOUR ACCOUNT</p>
-
-        <MobileForm />
+        <RegisterForm />
       </article>
     </main>
   );
