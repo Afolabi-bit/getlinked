@@ -7,7 +7,7 @@ import RegisterForm from "../components/Form";
 const Register = () => {
   return (
     <main>
-      <article className="px-[3rem] py-[25px]  md:hidden ">
+      <article className="px-[2rem] py-[25px]  md:hidden ">
         <h2 className="text-[#d434fe] mb-[50px]">Register</h2>
         <img src={Image} alt="#" className="" />
         <div className="flex items-baseline mt-[20px]">
