@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
 import Cross from "../assets/+.svg";
 
 export const RegisterBtn = () => {
   return (
-    <button className="register w-[172px] md:w-[122px] lg:w-[172px] text-white">
+    <Link
+      to={"/register"}
+      className="register flex items-center justify-center w-[172px] md:w-[122px] lg:w-[172px] text-white"
+    >
       Register
-    </button>
+    </Link>
   );
 };
 
