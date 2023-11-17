@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../config/firebase";
-import { async } from "@firebase/util";
 
 const RegisterForm = () => {
   const [checkbox, setCheckbox] = useState(false);
@@ -12,12 +11,22 @@ const RegisterForm = () => {
   const [category, setCategory] = useState("");
   const [size, setSize] = useState(2);
 
+  const formRef = useRef(null);
+
   const hackathonRef = collection(db, "hackathon");
 
   const formSubmit = async (e) => {
     e.preventDefault();
+    let add;
     try {
-      await addDoc(hackathonRef, { team, phone, email, topic, category, size });
+      add = await addDoc(hackathonRef, {
+        team,
+        phone,
+        email,
+        topic,
+        category,
+        size,
+      });
       setCategory("");
       setTeam("");
       setTopic("");
@@ -27,10 +36,20 @@ const RegisterForm = () => {
     } catch (err) {
       console.error(err);
     }
+    if (add.type == "document") {
+      console.log(formRef.current.parentElement.parentElement.parentElement);
+      formRef.current.parentElement.parentElement.parentElement.classList.add(
+        "done"
+      );
+    }
   };
 
   return (
-    <form onSubmit={(e) => formSubmit(e)} className="pt-[20px]">
+    <form
+      onSubmit={(e) => formSubmit(e)}
+      ref={formRef}
+      className="pt-[20px] md:bg-[#1C152E] md:rounded-[4px] md:px-[20px] md:pb-[20px] md:mt-[30px]"
+    >
       <div className="flex flex-col mb-[25px]">
         <label htmlFor="team-name" className="text-[13px] font-normal mb-[5px]">
           Team's Name
@@ -90,7 +109,7 @@ const RegisterForm = () => {
             name="category"
             id="category"
             onChange={(e) => setCategory(e.target.value)}
-            className="rounded-[4px] text-[13px] p-[10px] border border-[#fff] bg-transparent"
+            className="rounded-[4px] text-[13px] p-[10px] border border-[#fff] bg-transparent md:w-[200px]"
           >
             <option value="none">Select your category</option>
             <option value="fintech">Fintech</option>
@@ -105,7 +124,7 @@ const RegisterForm = () => {
             name="size"
             id="size"
             onChange={(e) => setSize(e.target.value)}
-            className="rounded-[4px] text-[13px]  p-[10px] border border-[#fff] bg-transparent"
+            className="rounded-[4px] text-[13px]  p-[10px] border border-[#fff] bg-transparent md:w-[150px]"
           >
             <option value="none">Select</option>
             <option value="2">2</option>

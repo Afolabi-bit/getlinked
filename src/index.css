@@ -256,6 +256,10 @@ input::placeholder {
   font-size: 13px;
 }
 
+.done .pop-up {
+  left: 0;
+}
+
 @media (min-width: 800px) {
   .hero-shadow {
     left: 15%;
