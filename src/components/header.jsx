@@ -16,9 +16,11 @@ const Header = () => {
   };
   return (
     <header className="px-[2rem] flex items-center justify-between pt-8 pb-4 md:px-[3rem] lg:px-[4.5rem]">
-      <h1 className="text-white text-[22px] font-semibold md:font-bold">
-        get<span className="text-[#D434FE] ">linked</span>
-      </h1>
+      <Link to={"/"}>
+        <h1 className="text-white text-[22px] font-semibold md:font-bold">
+          get<span className="text-[#D434FE] ">linked</span>
+        </h1>
+      </Link>
       <button className="md:hidden" onClick={() => toggleNavBar("open")}>
         <img src={Menu} alt="Menu Icon" />
       </button>

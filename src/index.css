@@ -219,6 +219,23 @@ nav li > a:hover,
   right: 0;
 }
 
+.register-mobile-shadow {
+  top: 250px;
+  left: 30%;
+}
+
+.register-desktop-top {
+  top: 30%;
+  left: 10%;
+  scale: 1.5;
+}
+
+.register-desktop-bottom {
+  bottom: 10%;
+  right: 10%;
+  scale: 1.5;
+}
+
 .answer {
   transition: height 0.3s, opacity 0.2s, tranform 0.3s;
 }

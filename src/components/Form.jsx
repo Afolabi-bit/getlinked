@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../config/firebase";
+import StarD from "../assets/star-dim.svg";
+import StarP from "../assets/star-purple.svg";
 
 const RegisterForm = ({ main }) => {
   const [checkbox, setCheckbox] = useState(false);
@@ -51,8 +53,18 @@ const RegisterForm = ({ main }) => {
     <form
       onSubmit={(e) => formSubmit(e)}
       ref={formRef}
-      className="pt-[20px] md:bg-[#1C152E]  md:rounded-[4px] md:px-[20px] md:pb-[20px] md:mt-[30px] lg:mt-0 lg:px-0"
+      className="pt-[20px] relative md:bg-[#1C152E]  md:rounded-[4px] md:px-[20px] md:pb-[20px] md:mt-[30px] lg:mt-0 lg:px-0 lg:bg-transparent"
     >
+      <img
+        src={StarP}
+        alt="#"
+        className="absolute right-[5%] bottom-[50%] twinkle-2"
+      />
+      <img
+        src={StarD}
+        alt="#"
+        className="absolute top-[25%] left-[5%] twinkle-2 md:left-[-10%]"
+      />
       <div className="lg:flex lg:gap-[20px]">
         <div className="flex flex-col mb-[25px]">
           <label

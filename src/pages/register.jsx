@@ -8,6 +8,10 @@ import RegisterForm from "../components/Form";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import Header from "../components/header";
+import { Shadow } from "../components/utils";
+import StarW from "../assets/star-white.svg";
+import StarD from "../assets/star-dim.svg";
+import StarP from "../assets/star-purple.svg";
 
 const Register = () => {
   const mainRef = useRef(null);
@@ -19,7 +23,8 @@ const Register = () => {
   return (
     <main ref={mainRef} className="pb-[30px]">
       {/* Small and Medium screens */}
-      <article className="px-[2rem] py-[35px] md:px-[5rem]  lg:hidden ">
+      <article className="px-[2rem] py-[35px] md:px-[5rem] relative lg:hidden ">
+        <Shadow dist={"register-mobile-shadow"} />
         <div className="flex items-start">
           <Link
             to={"/"}
@@ -43,6 +48,11 @@ const Register = () => {
           </Link>
           <h2 className="text-[#d434fe] mb-[50px]">Register</h2>
         </div>
+        <img
+          src={StarP}
+          alt="#"
+          className="absolute right-[15%] top-[20%] twinkle-2"
+        />
         <img src={Image} alt="#" className="" />
         <div className="md:w-[70%] md:mx-auto">
           <div className="flex items-baseline mt-[20px]">
@@ -63,7 +73,24 @@ const Register = () => {
       {/* Large Screens */}
       <article className="hidden lg:block ">
         <Header />
-        <div className="flex gap-[50px] py-[60px] px-[5rem]">
+        <Shadow dist={"register-desktop-top"} />
+        <Shadow dist={"register-desktop-bottom"} />
+        <div className="flex relative gap-[50px] py-[60px] px-[5rem]">
+          <img
+            src={StarP}
+            alt="#"
+            className=" absolute top-[50px] left-[7%] twinkle-fast"
+          />
+          <img
+            src={StarD}
+            alt="#"
+            className="absolute bottom-[20%] left-[12%] twinkle-2"
+          />
+          <img
+            src={StarP}
+            alt="#"
+            className=" absolute bottom-[40%] left-[42%] twinkle-2"
+          />
           <img
             src={Image}
             alt="#"
