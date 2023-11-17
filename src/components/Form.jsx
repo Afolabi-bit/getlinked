@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../config/firebase";
+import { async } from "@firebase/util";
 
 const RegisterForm = () => {
   const [checkbox, setCheckbox] = useState(false);
@@ -9,8 +12,21 @@ const RegisterForm = () => {
   const [category, setCategory] = useState("");
   const [size, setSize] = useState(2);
 
-  const formSubmit = (e) => {
+  const hackathonRef = collection(db, "hackathon");
+
+  const formSubmit = async (e) => {
     e.preventDefault();
+    try {
+      await addDoc(hackathonRef, { team, phone, email, topic, category, size });
+      setCategory("");
+      setTeam("");
+      setTopic("");
+      setPhone(0);
+      setEmail("");
+      setSize(2);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
