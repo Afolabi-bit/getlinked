@@ -3,8 +3,12 @@ import { useState } from "react";
 const RegisterForm = () => {
   const [checkbox, setCheckbox] = useState(false);
 
+  const formSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <form className="pt-[20px]">
+    <form onSubmit={(e) => formSubmit(e)} className="pt-[20px]">
       <div className="flex flex-col mb-[25px]">
         <label htmlFor="team-name" className="text-[13px] font-normal mb-[5px]">
           Team's Name
