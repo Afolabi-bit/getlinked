@@ -42,9 +42,9 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="text-white">
+            <Link to={"/contact"} className="text-white">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <RegisterBtn />
