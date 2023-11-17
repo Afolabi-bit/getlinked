@@ -38,6 +38,7 @@ const RegisterForm = () => {
         <input
           type="text"
           onChange={(e) => setTeam(e.target.value)}
+          required
           placeholder="Enter the name of your group"
           className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
         />
