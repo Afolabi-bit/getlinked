@@ -2,6 +2,12 @@ import { useState } from "react";
 
 const RegisterForm = () => {
   const [checkbox, setCheckbox] = useState(false);
+  const [team, setTeam] = useState("");
+  const [phone, setPhone] = useState(0);
+  const [email, setEmail] = useState("");
+  const [topic, setTopic] = useState("");
+  const [category, setCategory] = useState("");
+  const [size, setSize] = useState(2);
 
   const formSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +21,7 @@ const RegisterForm = () => {
         </label>
         <input
           type="text"
+          onChange={(e) => setTeam(e.target.value)}
           placeholder="Enter the name of your group"
           className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
         />
@@ -26,6 +33,7 @@ const RegisterForm = () => {
         </label>
         <input
           type="number"
+          onChange={(e) => setPhone(e.target.value)}
           placeholder="Enter your phone number "
           className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
         />
@@ -37,6 +45,7 @@ const RegisterForm = () => {
         </label>
         <input
           type="email"
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email address"
           className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
         />
@@ -51,6 +60,7 @@ const RegisterForm = () => {
         </label>
         <input
           type="text"
+          onChange={(e) => setTopic(e.target.value)}
           placeholder="Enter the name of your group"
           className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
         />
@@ -62,6 +72,7 @@ const RegisterForm = () => {
           <select
             name="category"
             id="category"
+            onChange={(e) => setCategory(e.target.value)}
             className="rounded-[4px] text-[13px] p-[10px] border border-[#fff] bg-transparent"
           >
             <option value="none">Select your category</option>
@@ -76,6 +87,7 @@ const RegisterForm = () => {
           <select
             name="size"
             id="size"
+            onChange={(e) => setSize(e.target.value)}
             className="rounded-[4px] text-[13px]  p-[10px] border border-[#fff] bg-transparent"
           >
             <option value="none">Select</option>
