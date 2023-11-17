@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import Header from "../components/header";
 import { Shadow } from "../components/utils";
-import StarW from "../assets/star-white.svg";
 import StarD from "../assets/star-dim.svg";
 import StarP from "../assets/star-purple.svg";
 

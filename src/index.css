@@ -277,6 +277,20 @@ input::placeholder {
   left: 0;
 }
 
+.contact-mobile-shadow {
+  left: 25%;
+  top: 25%;
+}
+
+.contact-form input,
+textarea {
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+}
+
 @media (min-width: 800px) {
   .hero-shadow {
     left: 15%;
