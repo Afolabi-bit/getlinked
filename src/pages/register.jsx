@@ -7,7 +7,7 @@ import SuccessMan from "../assets/success-man.svg";
 import RegisterForm from "../components/Form";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
-import Arrow from "../assets/arrow.svg";
+import Header from "../components/header";
 
 const Register = () => {
   const mainRef = useRef(null);
@@ -18,6 +18,7 @@ const Register = () => {
 
   return (
     <main ref={mainRef} className="pb-[30px]">
+      {/* Small and Medium screens */}
       <article className="px-[2rem] py-[35px] md:px-[5rem]  lg:hidden ">
         <div className="flex items-start">
           <Link
@@ -59,6 +60,35 @@ const Register = () => {
         </div>
       </article>
 
+      {/* Large Screens */}
+      <article className="hidden lg:block ">
+        <Header />
+        <div className="flex gap-[50px] py-[60px] px-[5rem]">
+          <img
+            src={Image}
+            alt="#"
+            className="w-[480px] h-[480px] object-cover"
+          />
+
+          <div className="bg-[#1C152E] p-[50px]">
+            <h2 className="text-[#d434fe] mb-[10px] text-[30px]">Register</h2>
+
+            <div className="flex items-baseline">
+              <p className="text-[12px] font-normal">
+                Be part of this movement!{" "}
+              </p>
+              <div className="relative w-[90px] ml-[20px] flex justify-center items-baseline translate-y-1">
+                <img src={Line} alt="#" className="absolute bottom-0 left-0" />
+                <img src={Woman} alt="" />
+                <img src={Man} alt="" />
+              </div>
+            </div>
+            <p className="text-[20px] font-normal">CREATE YOUR ACCOUNT</p>
+            <RegisterForm main={mainRef.current} />
+          </div>
+        </div>
+      </article>
+
       {/* Pop Up */}
       <article className="pop-up h-screen w-screen bg-[#150e28e7]  justify-center items-center flex fixed top-0 left-[-110%]">
         <div className="border border-[#d434fe] rounded-[4px] w-[310px]  px-[30px] py-[30px] md:w-[500px]">
@@ -66,12 +96,12 @@ const Register = () => {
             <img
               src={Check}
               alt="#"
-              className="absolute left-[6%] md:left-[18%] scale-[1.2]"
+              className="absolute left-[6%] md:left-[18%] lg:scale-[1.2]"
             />
             <img
               src={SuccessMan}
               alt="#"
-              className="absolute right-[6%] top-[10px] md:right-[18%] scale-[1.2]"
+              className="absolute right-[6%] top-[10px] md:right-[18%] lg:scale-[1.2]"
             />
           </div>
           <p className="text-[16px] font-semibold  text-center mt-[20px] md:mt-[40px] ">

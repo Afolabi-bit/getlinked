@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../config/firebase";
 
-const RegisterForm = () => {
+const RegisterForm = ({ main }) => {
   const [checkbox, setCheckbox] = useState(false);
   const [team, setTeam] = useState("");
   const [phone, setPhone] = useState(0);
@@ -37,10 +37,13 @@ const RegisterForm = () => {
       console.error(err);
     }
     if (add.type == "document") {
-      console.log(formRef.current.parentElement.parentElement.parentElement);
-      formRef.current.parentElement.parentElement.parentElement.classList.add(
-        "done"
-      );
+      if (main) {
+        main.classList.add("done");
+      } else {
+        formRef.current.parentElement.parentElement.parentElement.classList.add(
+          "done"
+        );
+      }
     }
   };
 
@@ -48,58 +51,65 @@ const RegisterForm = () => {
     <form
       onSubmit={(e) => formSubmit(e)}
       ref={formRef}
-      className="pt-[20px] md:bg-[#1C152E] md:rounded-[4px] md:px-[20px] md:pb-[20px] md:mt-[30px]"
+      className="pt-[20px] md:bg-[#1C152E]  md:rounded-[4px] md:px-[20px] md:pb-[20px] md:mt-[30px] lg:mt-0 lg:px-0"
     >
-      <div className="flex flex-col mb-[25px]">
-        <label htmlFor="team-name" className="text-[13px] font-normal mb-[5px]">
-          Team's Name
-        </label>
-        <input
-          type="text"
-          onChange={(e) => setTeam(e.target.value)}
-          required
-          placeholder="Enter the name of your group"
-          className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
-        />
+      <div className="lg:flex lg:gap-[20px]">
+        <div className="flex flex-col mb-[25px]">
+          <label
+            htmlFor="team-name"
+            className="text-[13px] font-normal mb-[5px]"
+          >
+            Team's Name
+          </label>
+          <input
+            type="text"
+            onChange={(e) => setTeam(e.target.value)}
+            required
+            placeholder="Enter the name of your group"
+            className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
+          />
+        </div>
+
+        <div className="flex flex-col mb-[25px]">
+          <label htmlFor="phone" className="text-[13px] font-normal mb-[5px]">
+            Phone
+          </label>
+          <input
+            type="number"
+            onChange={(e) => setPhone(e.target.value)}
+            placeholder="Enter your phone number "
+            className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
+          />
+        </div>
       </div>
 
-      <div className="flex flex-col mb-[25px]">
-        <label htmlFor="phone" className="text-[13px] font-normal mb-[5px]">
-          Phone
-        </label>
-        <input
-          type="number"
-          onChange={(e) => setPhone(e.target.value)}
-          placeholder="Enter your phone number "
-          className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
-        />
-      </div>
+      <div className="lg:flex lg:gap-[20px]">
+        <div className="flex flex-col mb-[25px]">
+          <label htmlFor="email" className="text-[13px] font-normal mb-[5px]">
+            Email
+          </label>
+          <input
+            type="email"
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email address"
+            className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
+          />
+        </div>
 
-      <div className="flex flex-col mb-[25px]">
-        <label htmlFor="email" className="text-[13px] font-normal mb-[5px]">
-          Email
-        </label>
-        <input
-          type="email"
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter your email address"
-          className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
-        />
-      </div>
-
-      <div className="flex flex-col mb-[25px]">
-        <label
-          htmlFor="project-topic"
-          className="text-[13px] font-normal mb-[5px]"
-        >
-          Project Topic
-        </label>
-        <input
-          type="text"
-          onChange={(e) => setTopic(e.target.value)}
-          placeholder="Enter the name of your group"
-          className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
-        />
+        <div className="flex flex-col mb-[25px]">
+          <label
+            htmlFor="project-topic"
+            className="text-[13px] font-normal mb-[5px]"
+          >
+            Project Topic
+          </label>
+          <input
+            type="text"
+            onChange={(e) => setTopic(e.target.value)}
+            placeholder="Enter the name of your group"
+            className="rounded-[4px] text-[13px] border border-[#fff] bg-transparent px-[30px] py-[10px]"
+          />
+        </div>
       </div>
 
       <div className="flex justify-between mb-[10px]">
@@ -135,7 +145,7 @@ const RegisterForm = () => {
         </div>
       </div>
 
-      <p className="text-[#ff26b9] text-[9px] font-normal italic">
+      <p className="text-[#ff26b9] text-[9px] font-normal italic lg:text-[12px]">
         Please review your registration details before submitting
       </p>
 
@@ -147,7 +157,10 @@ const RegisterForm = () => {
           name="terms"
           id="terms"
         />
-        <label htmlFor="terms" className="text-[10px] ml-[5px] font-normal">
+        <label
+          htmlFor="terms"
+          className="text-[10px] ml-[5px] font-normal lg:text-[15px]"
+        >
           I agreed with the event terms and conditions and privacy policy
         </label>
       </div>
