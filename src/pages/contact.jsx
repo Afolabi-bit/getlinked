@@ -96,9 +96,27 @@ const Contact = () => {
       </article>
 
       {/* Large screens */}
-      <article className="hidden  lg:block">
+      <article className="hidden lg:block">
         <Header />
-        <div className="flex pt-[80px] px-[7rem] justify-between">
+        <Shadow dist={"large-contact-shadow-top"} />
+        <Shadow dist={"large-contact-shadow-bottom"} />
+
+        <div className="flex py-[80px] px-[7rem] justify-between relative">
+          <img
+            src={StarP}
+            alt="#"
+            className="top-[30px] left-[8rem] absolute twinkle-fast"
+          />
+          <img
+            src={StarD}
+            alt="#"
+            className="absolute top-[30px] right-[7.5rem] twinkle-2"
+          />
+          <img
+            src={StarW}
+            alt="#"
+            className="absolute bottom-[120px] right-[4rem]"
+          />
           <div>
             <h2 className="text-[#d434fe] text-[32px] font-semibold mb-[20px]">
               Get in touch
@@ -122,7 +140,13 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="w-[620px] bg-[#1C152E] p-[4rem] rounded-[4px]">
+          <form className="form-shadow w-[620px] bg-[#1C152E] p-[4rem] rounded-[12px] relative">
+            <img
+              src={StarP}
+              alt="#"
+              className="left-[-1px] bottom-[170px] twinkle-2 absolute"
+            />
+
             <h2 className="text-[#d434fe] text-[20px] font-semibold mb-[20px]">
               Questions or need assistance? <br /> Let us know about it!
             </h2>
