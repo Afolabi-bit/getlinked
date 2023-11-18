@@ -7,7 +7,7 @@ import Header from "../components/header";
 
 const Contact = () => {
   return (
-    <section className="py-[2rem] px-[2rem]">
+    <section className="py-[2rem] px-[2rem] lg:p-0">
       <Link
         to={"/"}
         className="w-[30px] h-[30px] rounded-[100%] flex justify-center items-center back-btn lg:hidden"
@@ -28,8 +28,9 @@ const Contact = () => {
           </svg>
         </span>
       </Link>
-      <Header />
-      <article className="relative md:w-[400px] md:mx-auto lg:w-full lg:flex lg:min-h-screen lg:justify-evenly lg:items-start">
+
+      {/* Small screens */}
+      <article className="relative md:w-[400px] md:mx-auto lg:hidden">
         <Shadow dist={"contact-mobile-shadow"} />
         <img
           src={StarP}
@@ -91,6 +92,58 @@ const Contact = () => {
         <div className="flex flex-col items-center justify-center lg:hidden">
           <h4 className="text-[#d434fe] text-[12px] mb-2">Share on</h4>
           <Socials />
+        </div>
+      </article>
+
+      {/* Large screens */}
+      <article className="hidden  lg:block">
+        <Header />
+        <div className="flex pt-[80px] px-[7rem] justify-between">
+          <div>
+            <h2 className="text-[#d434fe] text-[32px] font-semibold mb-[20px]">
+              Get in touch
+            </h2>
+            <p className="text-[16px] font-normal mb-[20px]">
+              Contact Information
+            </p>
+            <p className="text-[16px] font-normal mb-[20px]">
+              27, Alara Street <br /> Yaba 100012 <br /> Lagos State
+            </p>
+            <p className="text-[16px] font-normal mb-[20px]">
+              Call Us: 07067981819
+            </p>
+            <p className="text-[16px] font-normal mb-[20px]">
+              We are open from Monday-Friday <br /> 08:00am - 05:00pm
+            </p>
+
+            <div>
+              <p className="text-[#d434fe] text-[16px] mb-[5px]">Share on</p>
+              <Socials />
+            </div>
+          </div>
+
+          <form className="w-[620px] bg-[#1C152E] p-[4rem] rounded-[4px]">
+            <h2 className="text-[#d434fe] text-[20px] font-semibold mb-[20px]">
+              Questions or need assistance? <br /> Let us know about it!
+            </h2>
+            <input
+              type="text"
+              placeholder="First Name"
+              className="bg-transparent border border-white w-full mb-[20px] py-[5px] px-[20px]"
+            />
+            <input
+              type="email"
+              placeholder="Mail"
+              className="bg-transparent border border-white w-full mb-[20px] py-[5px] px-[20px]"
+            />
+            <textarea
+              cols="30"
+              rows="5"
+              placeholder="Message"
+              className="bg-transparent border border-white w-full px-[20px] py-[5px]"
+            ></textarea>
+            <button className="btn w-[150px] block mx-auto">Submit</button>
+          </form>
         </div>
       </article>
     </section>
