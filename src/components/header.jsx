@@ -4,7 +4,7 @@ import { RegisterBtn } from "./utils";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ page }) => {
   const navBarRef = useRef(null);
 
   const toggleNavBar = (action) => {
