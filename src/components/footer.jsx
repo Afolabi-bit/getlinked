@@ -2,7 +2,7 @@ import { Socials } from "./utils";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#100B20]">
+    <footer className="bg-[#100B20] pb-[70px]">
       <article className="flex flex-col px-[3rem] py-[70px] bg-[#100B20] lg:mx-[5rem] lg:flex-row lg:justify-between">
         <div className="text-left mb-[35px] lg:w-[35%]">
           <h3 className="text-[20px] font-bold mb-[10px]">
@@ -114,7 +114,7 @@ const Footer = () => {
           </div>
         </div>
       </article>
-      <p className="text-[12px] text-center mt-[30px] font-normal md:text-left">
+      <p className="text-[12px] text-center mt-[30px] font-normal md:text-left md:px-[3rem] lg:text-center">
         {" "}
         All rights reserved. © getlinked Ltd.
       </p>
