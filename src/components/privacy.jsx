@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
         </div>
 
         {/* IMAGE */}
-        <div className="relative border border-red-600 mt-[70px] w-[330px] mx-auto h-[450px] md:h-[700px] md:w-[450px] md:mb-[80px]">
+        <div className="relative mt-[70px] w-[330px] mx-auto h-[450px] md:h-[700px] md:w-[450px] md:mb-[80px]">
           <img
             src={StarP}
             alt="#"
