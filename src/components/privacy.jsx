@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
         </div>
 
         {/* IMAGE */}
-        <div className="relative mt-[70px] w-[400px] mx-auto h-[450px] md:h-[869.5px]">
+        <div className="relative border border-red-600 mt-[70px] w-[330px] mx-auto h-[450px] md:h-[700px] md:w-[450px] md:mb-[80px]">
           <img
             src={StarP}
             alt="#"
@@ -132,12 +132,12 @@ const PrivacyPolicy = () => {
           <img
             src={Shield}
             alt="#"
-            className="absolute top-0 left-[50%] translate-x-[-50%] w-[390px] h-[311px] md:w-[500px] md:h-[600px] "
+            className="absolute top-0 left-[50%] translate-x-[-50%] w-[330px] h-[311px] md:w-[500px] md:h-[600px] "
           />
           <img
             src={Lock}
             alt="#"
-            className="absolute bottom-0 object-contain left-[10%] w-[262px] h-[351px] md:h-[640px] md:w-[520px] md:bottom-[80px] md:left-[-4%]"
+            className="absolute bottom-0 object-contain left-[10%] w-[262px] h-[351px] md:h-[640px] md:w-[520px] md:bottom-[-40px] md:left-[4%]"
           />
         </div>
       </article>
